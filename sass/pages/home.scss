@@ -1,0 +1,124 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body *{
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #121214;
+    background-image: url(../../images/bg.svg);
+    background-position-x: center ;
+    background-position-y: 58% ;
+    background-repeat: no-repeat;
+
+    
+
+
+    .container {
+        color: $fontColor;
+        width: fit-content;
+        margin: 52px auto;
+        
+
+
+        .header {
+            margin-bottom: 63px;
+            text-align: center;
+            
+        }
+
+        .sectionCards{
+            display: flex;
+          //  flex-direction: column;
+            flex-wrap: wrap;
+            gap: 32px;
+            
+            
+            
+        
+            .card{
+                background-color: $backgroundColorCard;
+                border-bottom: 2px solid #F7DD43;
+                border-radius: 6px;
+                padding: 32px 23px;
+                text-align: center;
+                .date{
+                    border: 1px $primaryColor solid;
+                    border-radius: 6px;
+                    font-size: 14px;
+     
+                    padding: 8px 16px ;
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 16px;
+                    width: fit-content;
+                    margin-inline: auto;
+                    margin-bottom: 53px;
+
+                    span{
+                        color: $primaryColor;
+                        font-size: 24px;
+                    }
+                }
+                
+
+                ul {
+                    list-style: none;
+                    margin: 0px 23px 32px 23px;
+                    
+                  //  display: flex;
+                  //  flex-direction: column;
+                  //  gap: 24px;
+
+                    li{
+                        //border: red solid 2px;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 270px;
+                        align-items: center;
+                        font-size: 34px;                 
+                        font-weight: 900;
+                        line-height: 125%;
+
+
+                        strong:hover, img:hover{
+                            transform: scale(1.1);
+                        }
+
+                        strong, img{
+                            transition: transform 0.3s;
+                        }
+                    }
+
+                    li + li {
+                        border-top: 1px solid #323238;
+                        padding-top: 24px;
+                        margin-top: 24px;
+                    }
+                    
+                }
+                
+                
+                
+        
+            }
+            
+            
+        }
+            
+            
+    }
+    
+
+}
+
+
+
+
+
